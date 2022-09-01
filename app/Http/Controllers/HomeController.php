@@ -23,7 +23,7 @@ class HomeController extends Controller
 //home page
     public function index()
     {
-
+        
         return view('front.index.index');
     }
 //shop-sidebar-grid-left
@@ -72,9 +72,8 @@ public function my_account()
         return view('front.page.my_account');
     }
 //login
-public function login(){
-
-    dd(0);
+public function login()
+{
     return view('front.page.login');
 }
 //product_single_affiliate
@@ -82,11 +81,11 @@ public function product_single_affiliate()
 {
     return view('front.page.product_single_affiliate');
 }
-//blog-grid-sidebar-left
+//blog-grid-sidebar-left 
 public function blog_grid_sidebar_left()
 {
     return view('front.page.blog_grid_sidebar_left');
-}
+} 
 //blog-single-sidebar-left
 public function blog_single_sidebar_left()
 {
@@ -117,5 +116,5 @@ public function error()
 {
     return view('front.page.error');
 }
-
+   
 }

@@ -89,7 +89,7 @@ Route::group(['namespace'=>'Administrator','prefix'=>'administrator','middleware
   //general setting controller
   Route::get('/general-setting', [GeneralSettingController::class, 'index'])->name('admin_general_setting');
   Route::post('/general-setting-store', [GeneralSettingController::class, 'store'])->name('admin_general_setting_store');
-  //gallery Controller
+  //gallery Controller                                                        
   Route::get('/gallery-list', [GalleryController::class, 'index'])->name('admin_gallery');
   Route::post('/gallery/getGalleryData', [GalleryController::class, 'getGalleryData'])->name('admin_getGalleryData');
   Route::get('/gallery/create', [GalleryController::class, 'create'])->name('admin_gallery_create');
@@ -109,7 +109,7 @@ Route::group(['namespace'=>'Administrator','prefix'=>'administrator','middleware
   Route::get('/blog/view/{id}', [BlogController::class, 'view'])->name('admin_blog_edit');
   Route::get('/blog/edit/{id}', [BlogController::class, 'edit'])->name('admin_blog_edit');
   Route::post('/blog/edit-update', [BlogController::class, 'edit_update'])->name('admin_blog_edit_store');
-  //Banner Controller
+  //Banner Controller                                                        
   Route::get('/banner-list', [BannerController::class, 'index'])->name('admin_banner');
   Route::post('/banner/getBannerData', [BannerController::class, 'getBannerData'])->name('admin_getBannerData');
   Route::get('/banner/create', [BannerController::class, 'create'])->name('admin_banner_create');
